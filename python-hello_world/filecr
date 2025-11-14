@@ -18,7 +18,6 @@ fi
 # Faylı yaradıb ilk 2 sətri yaz
 cat <<EOF > "$filename"
 #!/usr/bin/python3
-# bu nese eliyir
 EOF
 
 # Faylı icra edilə bilən et
