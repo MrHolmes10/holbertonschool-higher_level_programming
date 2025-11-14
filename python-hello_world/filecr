@@ -17,11 +17,12 @@ fi
 
 # Faylı yaradıb ilk 2 sətri yaz
 cat <<EOF > "$filename"
-#!/usr/bin/env bash 
+#!/usr/bin/python3
 # bu nese eliyir
 EOF
 
 # Faylı icra edilə bilən et
 chmod +x "$filename"
-
 echo "✅ $filename yaradıldı və icra hüququ verildi."
+nano "$filename"
+
