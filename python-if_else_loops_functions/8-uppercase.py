@@ -7,5 +7,6 @@ def uppercase(str):
     elif ord("a")<=ord(i)<=ord("z"):
        t=ord(i)-(ord("a")-ord("A"))
        STR=STR+chr(t)
- print(f"{}".format(STR))
+ print(f"{STR}".format(STR))
+
 
