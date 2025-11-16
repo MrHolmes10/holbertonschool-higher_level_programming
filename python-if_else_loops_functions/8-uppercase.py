@@ -2,11 +2,11 @@
 def uppercase(str):
  STR=""
  for i in str:
-    if ord("A")<=ord(i)<=ord("Z"):
-       STR=STR+i
-    elif ord("a")<=ord(i)<=ord("z"):
+    if ord("a")<=ord(i)<=ord("z"):
        t=ord(i)-(ord("a")-ord("A"))
        STR=STR+chr(t)
+    else:
+       STR=STR+i
  print(f"{STR}".format(STR))
 
 
