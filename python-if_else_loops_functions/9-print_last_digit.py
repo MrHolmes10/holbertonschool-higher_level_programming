@@ -4,5 +4,4 @@ def print_last_digit(n):
     l=n%10
   else:
     l=(n*(-1))%10 
- return l
- print(l, end="")
+  print(l, end="")
