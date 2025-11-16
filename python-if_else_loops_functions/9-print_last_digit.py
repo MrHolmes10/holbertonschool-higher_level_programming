@@ -5,3 +5,4 @@ def print_last_digit(n):
   else:
     l=(n*(-1))%10 
   print(l, end="")
+  return l
