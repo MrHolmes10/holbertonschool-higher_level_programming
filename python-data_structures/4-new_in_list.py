@@ -7,4 +7,4 @@ def new_in_list(my_list, idx, element):
   mylist=my_list
   mylist[idx]=element
   return mylist
-  # return my_list
+  return my_list
