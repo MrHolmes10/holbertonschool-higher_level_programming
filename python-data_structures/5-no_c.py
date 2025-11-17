@@ -8,4 +8,4 @@ def no_c(my_string):
        continue
     
   for k in L:
-    print("{:d}".format(k))
+    print("{}".format(k),end="")
