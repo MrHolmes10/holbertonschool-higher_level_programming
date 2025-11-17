@@ -12,7 +12,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
      b1=tuple_b[0]
    else: 
      b1=0
-   if len(tuple_B)>1:
+   if len(tuple_b)>1:
      b2=tuple_b[1]
    else:
      b2=0
