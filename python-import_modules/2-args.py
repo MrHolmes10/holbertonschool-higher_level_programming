@@ -7,6 +7,7 @@ if  __name__ == "__main__":
   print("0 argumnets.")
  elif len(L)==0:
    print("1 argument:")
+   print("1: {}".format(L[0]))
  else:
   print("{} arguments:".format(len(L)))
   for i  in L: 
