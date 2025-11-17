@@ -6,4 +6,5 @@ def no_c(my_string):
       L.append(i)
     else:
        continue
-    return L
+    
+  return L
