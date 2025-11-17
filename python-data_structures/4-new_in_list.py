@@ -3,8 +3,8 @@ def new_in_list(my_list, idx, element):
   if idx<0 or idx>=len(my_list):
     mylist=my_list
     return mylist
-  else: 
-    mylist=my_list
-    mylist[idx]=element
-    return mylist
-    return my_list
+  
+  mylist=my_list
+  mylist[idx]=element
+  return mylist
+  # return my_list
