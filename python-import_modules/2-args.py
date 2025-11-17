@@ -4,7 +4,7 @@ if  __name__ == "__main__":
  L=sys.argv[1:]
  a=1
  if len(L)==0:
-  print("0 argumnets.")
+  print("0 argumnet.")
  else:
   print("{} argument:".format(len(L)))
   for i  in L: 
