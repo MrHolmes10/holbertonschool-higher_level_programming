@@ -7,4 +7,5 @@ def no_c(my_string):
     else:
        continue
     
-  return L
+  for k in L:
+    print("{:d}".format(k))
