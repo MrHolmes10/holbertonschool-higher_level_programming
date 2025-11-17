@@ -6,9 +6,9 @@ def no_c(my_string):
       L.append(i)
     else:
        continue
-  str="" 
-  for k in L:
-    str=str+k
+ str="" 
+ for k in L:
+   str=str+k
  
  print(str)  
   #print("{}".format(str(k)),end="")
