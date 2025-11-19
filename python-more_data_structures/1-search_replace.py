@@ -6,7 +6,7 @@ def search_replace(my_list, search, replace):
      
   for x in range(len(a)):
    if x==search:
-     a[x]=reeplace
+     a[x]=replace
     
   return a
  
