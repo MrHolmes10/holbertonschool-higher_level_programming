@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
- new_mat=matrix
+ new_mat=matrix[0:]
  for i in new_mat:
      a=0
      for k in i:
