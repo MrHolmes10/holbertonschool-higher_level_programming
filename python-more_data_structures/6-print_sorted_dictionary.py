@@ -6,4 +6,4 @@ def print_sorted_dictionary(a_dictionary):
         a.append(i)
     a.sort()
     for t in a:
-        print(t,":",a_dictionary[t])
+        print("{}: {}".format(t,a_dictionary[t])
