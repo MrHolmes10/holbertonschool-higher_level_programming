@@ -4,9 +4,9 @@ def search_replace(my_list, search, replace):
   for i in my_list:
      a.append(i)
      
-  for x in range(0,len(a)):
+  for x in range(1,len(a)):
    if x==search:
-     a[x]=replace
+     a[x-1]=replace
     
   return a
  
