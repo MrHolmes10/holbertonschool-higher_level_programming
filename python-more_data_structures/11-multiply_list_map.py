@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 def multiply_list_map(my_list=[], number=0):
-     print(list(map(double,a)))
+     print(list(map(lambda x: x*2,a)))
+
