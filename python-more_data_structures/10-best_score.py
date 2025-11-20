@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    L=[]
     if a_dictionary != None  :
+      a = a_dictionary[0]
       for i in a_dictionary:
-        L.append(a_dictionary[i])
-      return max(L)
+       t=0
+       if a_dictionary[i] > a: 
+          a=a_dictionary[i]
+          t=i
+          keys = [key for key, val in d.items() if val == t] 
+      return keys
