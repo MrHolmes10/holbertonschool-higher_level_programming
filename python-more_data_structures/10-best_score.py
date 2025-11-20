@@ -7,5 +7,5 @@ def best_score(a_dictionary):
        if a_dictionary[i] > a: 
           a=a_dictionary[i]
           t=i
-          keys = [key for key, val in d.items() if val == t] 
+          keys = [key for key, val in a_dictionary.items() if val == t] 
       return keys
