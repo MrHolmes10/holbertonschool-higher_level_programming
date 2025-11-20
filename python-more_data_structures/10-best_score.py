@@ -9,3 +9,5 @@ def best_score(a_dictionary):
           t=i
           keys = [key for key, val in a_dictionary.items() if val == a]
       return keys[0]
+    else:
+      return None
