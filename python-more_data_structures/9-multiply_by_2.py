@@ -4,4 +4,4 @@ def multiply_by_2(a_dictionary):
     for i in list(a_dictionary):
          mydi[i]=a_dictionary
     for t in  mydi:
-        print("{}: {}".format(t,str(int(mydi[t])*2)))
+        print(t,": ",mydi[t])
