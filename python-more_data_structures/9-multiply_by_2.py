@@ -4,4 +4,4 @@ def multiply_by_2(a_dictionary):
     for i in list(a_dictionary):
          mydi[i]=a_dictionary[i]
     for t in  sorted(mydi):
-        print(t,":",mydi[t])
+        print(t,": ",mydi[t]*2,sep="")
