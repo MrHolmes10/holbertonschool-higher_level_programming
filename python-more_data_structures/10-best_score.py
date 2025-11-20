@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary != {}  :
+    if a_dictionary != {} or a_dictionary != None :
       a = 0
       for i in a_dictionary:
        t=0
