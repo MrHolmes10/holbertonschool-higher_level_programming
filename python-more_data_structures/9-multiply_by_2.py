@@ -3,4 +3,7 @@ def multiply_by_2(a_dictionary):
     mydi={}
     for i in list(a_dictionary):
          mydi[i]=a_dictionary
-    return mydi
+    for x in list(mydi):
+         mydi[x]=mydi[x]*2
+    for t in  mydi:
+        print("{}: {}".format(t,mydi[t]))
