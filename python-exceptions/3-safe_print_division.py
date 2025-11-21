@@ -8,4 +8,4 @@ def safe_print_division(a, b):
         print("Inside result: None")
         return None
     finally:
-        
+        pass
