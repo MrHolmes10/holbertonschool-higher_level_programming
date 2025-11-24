@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"'classdi qaqa uzatma'"
 class Rectangle:
     "'Defines class'"
     def __init__(self, width=0, height=0):
