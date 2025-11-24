@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"'class jobs'"
 class Rectangle:
     "'Defines class'"
     def __init__(self, width=0, height=0):
@@ -26,9 +25,9 @@ class Rectangle:
         return self.__height
     
     @height.setter
-    def heigth(self, value):
-        if not isinstance(value, int):
+    def heigth(self, value1):
+        if not isinstance(value1, int):
             raise TypeError("height must be an integer")
-        if value < 0:
+        if value1 < 0:
             raise ValueError("height must be >= 0")
-        self.__height = value
+        self.__height = value1
