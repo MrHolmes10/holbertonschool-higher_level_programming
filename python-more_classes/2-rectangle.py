@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"'claa 22 '"
+"'rerwre'"
 class Rectangle():
     "'Defines class'"
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-    
+        
     @property
     def width(self):
         "'uytre'"
@@ -35,12 +35,22 @@ class Rectangle():
         self.__height = value
     
     def area(self):
-        "'returns area'"
         return self.__height * self.__width
-
+    
     def perimeter(self):
-        "'returns perimeters'"
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            return 2 * (self.__width + self.__height)
+            return self.__width * self.__height
+    def ___str__(self):
+        """"qwertyuioplkjhgfd"""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        rect = ""
+        for i in range(self.__height):
+            react += "#" * self.__width
+            if i != self.__height - 1:
+                rect += "\n"
+        print(rect)
+
+my_rectangle = Rectangle(2, 4)
