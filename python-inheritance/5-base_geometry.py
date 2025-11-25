@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"'741596'"
-class BaseGeometry():
-     "'12wewewd'"
-     pass
+"""Defines an empty BaseGeometry class."""
+
+
+class BaseGeometry:
+    """Empty class BaseGeometry."""
+    pass
