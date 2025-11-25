@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """7777"""
 
-class BaseGometry():
+class BaseGeometry():
     """i am the best"""
     
     
