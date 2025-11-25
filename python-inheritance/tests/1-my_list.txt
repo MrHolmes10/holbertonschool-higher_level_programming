@@ -1,4 +1,4 @@
-#!/usr/bin/python3
-"'class method'" 
-"'class method for list sorted'"
+>>> #!/usr/bin/python3
+>>> "'class method'" 
+>>> "'class method for list sorted'"
 
