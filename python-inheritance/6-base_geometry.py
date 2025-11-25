@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"'bayadir yuxusuzam'"
+"""Defines a BaseGeometry class with an unimplemented area method."""
 
 
-class BaseGeometry():
-    """sleep i want it that wayyy"""
-     
+class BaseGeometry:
+    """BaseGeometry class."""
+
     def area(self):
-        """zafer alla gozz"""
+        """Public instance method that raises an exception."""
         raise Exception("area() is not implemented")
