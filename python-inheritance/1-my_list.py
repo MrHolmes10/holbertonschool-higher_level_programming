@@ -4,4 +4,6 @@ class MyList(list):
     "'qwertyuiopasdfg'"
     def print_sorted(self):
         "'999'"
-        print(sorted(self))
+        l_sorted = self.copy()
+        l_sorted.sort()
+        print(l_sorted)
