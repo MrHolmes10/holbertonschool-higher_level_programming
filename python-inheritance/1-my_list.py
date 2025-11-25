@@ -17,6 +17,4 @@ class MyList(list):
         Does not modify the original list.
         Returns the sorted list.
         """
-        sorted_list = sorted(self)
-        print(sorted_list)
-        return sorted_list
+        print(sorted(self))
