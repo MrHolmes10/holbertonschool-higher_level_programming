@@ -16,8 +16,6 @@ class Rectangle:
         """qwsdfghbn"""
         return self.__width * self.__height
 
-    def integer_validator(self):
-        pass
     
     def __str__(self):
         return "[Rectangle] <{}>/<{}>".format(self.__width, self.__height)
