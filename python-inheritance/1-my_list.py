@@ -1,7 +1,22 @@
 #!/usr/bin/python3
-"'class'"
+"""
+Module that defines the MyList class.
+This class inherits from list and adds a method to print a sorted version.
+"""
+
+
 class MyList(list):
-    "'qwertyuiopasdfg'"
+    """
+    MyList class that inherits from built-in list.
+    Provides a method to print the list in sorted order.
+    """
+
     def print_sorted(self):
-        "'999'"
-        print(sorted(self))
+        """
+        Prints the list in ascending order.
+        Does not modify the original list.
+        Returns the sorted list.
+        """
+        sorted_list = sorted(self)
+        print(sorted_list)
+        return sorted_list
