@@ -2,7 +2,7 @@
 """tasks 10"""
 
 class Student:
-     """ class"""
+    """ class"""
     def __init__(self, first_name, last_name, age):
          """you tube"""
 
@@ -11,7 +11,7 @@ class Student:
          self.age = age
 
     def to_json(self, attrs=None):
-        """if att """
+         """if att """
 
          if (isinstance(attrs, list) and
                 all(isinstance(x, str) for x in attrs)):
@@ -21,4 +21,4 @@ class Student:
                     result[key] = getattr(self, key)
             return result
 
-        return self.__dict__
+         return self.__dict__
