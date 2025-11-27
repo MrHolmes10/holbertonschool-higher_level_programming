@@ -4,3 +4,4 @@ def append_write(filename="", text=""):
     """ERFGH"""
     with open(filename, "a") as oo:
          oo.write(text)
+         return  len(text)
