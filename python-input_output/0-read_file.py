@@ -3,5 +3,6 @@
 def read_file(filename=""):
     """1234567890-asdfghjklertyu"""
     with open(filename, encoding="utf-8") as oo:
-        print(oo.readline())
+        for lines in oo.readlines():
+            print(lines ,end="")
 
