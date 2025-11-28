@@ -8,7 +8,7 @@ def pascal_triangle(n):
             return 0
         triangle = [[1],[1,1]]
         if n == 1:
-            return triangle[0]
+            return [triangle[0]]
         if n == 2:
             return triangle[1]
         for row in range(3,n+1):
