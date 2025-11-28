@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """tasks 11"""
-import json as js
+
 
 
 class Student:
@@ -27,6 +27,5 @@ class Student:
    
     def reload_from_json(self, json):
         """123456789"""
-        a = js.loads(json)
-        for i,j in a.items() :
+        for i, j in json.items() :
             self.i = j
