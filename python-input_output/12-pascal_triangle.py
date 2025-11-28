@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """tasks 12"""
 
-def pascal_triangel(n):
+def pascal_triangle(n):
     """ easy idi """
     L=[[1],[1,1]]
     for x in range(3,n+1):
