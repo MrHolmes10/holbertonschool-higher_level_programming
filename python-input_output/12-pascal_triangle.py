@@ -2,6 +2,7 @@
 """tasks 12"""
 
 def pascal_triangel(n):
+    """ easy idi """
     L=[[1],[1,1]]
     for x in range(3,n+1):
         T=[1]*x
