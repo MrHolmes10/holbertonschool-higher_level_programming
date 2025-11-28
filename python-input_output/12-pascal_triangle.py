@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """tasks 12"""
 
-def pascal_triangel(n):
+def pascal_triangle(n):
     """easyyyy """
     try:
         if n <= 0:
