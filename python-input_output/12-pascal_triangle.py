@@ -1,17 +1,20 @@
 #!/usr/bin/python3
 """tasks 12"""
 
-def pascal_triangle(n):
-    """easy !!"""
+def pascal_triangel(n):
+    """easyyyy """
     try:
         if n <= 0:
             return 0
-        L=[[1],[1,1]]
-        for x in range(3,n+1):
-            T=[1]*x
+        triangle = [[1],[1,1]]
+        if n < 3:
+            return triangle
+                 
+        for row in range(3,n+1):
+            T=[1]*row
             for i in range(len(T)):
                 try:
-                    l=L[x-2]
+                    l = triangle[row-2]
                     
                     T[i+1]=l[i]+l[i+1]
                     
@@ -25,8 +28,7 @@ def pascal_triangle(n):
                         T[i]=1
                     
                 
-                L.append(T)       
-        for lits in L:
-            print(lits)           
+                triangle.append(T)
+        return triangle   
     except:
         return 0
