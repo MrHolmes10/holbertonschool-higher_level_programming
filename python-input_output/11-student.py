@@ -28,4 +28,4 @@ class Student:
     def reload_from_json(self, json):
         """123456789"""
         for i, j in json.items() :
-            self.i = j
+            self.__dict__[i] = j
