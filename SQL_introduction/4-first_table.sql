@@ -1,5 +1,5 @@
 -- Database
-CREATE TABLE first_table  (
-id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE first_table(
+id INT PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(256),
 );
