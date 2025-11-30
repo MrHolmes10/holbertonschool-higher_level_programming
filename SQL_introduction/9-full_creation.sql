@@ -1,7 +1,7 @@
 -- Database
 CREATE TABLE if not exists second_table(
 id INT AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(256)
+name VARCHAR(256),
 score INT
 );
 
