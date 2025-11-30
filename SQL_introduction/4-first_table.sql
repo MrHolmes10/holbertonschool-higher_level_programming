@@ -1,5 +1,5 @@
 -- Database
 CREATE TABLE first_table  (
-id INT,
+id INT AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(256),
 );
