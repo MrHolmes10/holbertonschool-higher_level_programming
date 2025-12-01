@@ -8,7 +8,7 @@ if [ -z "$1" ]; then
 fi
 
 filename="$1"
-
+x
 # Əgər fayl artıq mövcuddursa xəbərdarlıq et
 if [ -e "$filename" ]; then
   echo "⚠️  $filename artıq mövcuddur!"
