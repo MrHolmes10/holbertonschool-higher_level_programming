@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
 """ network email"""
 
+import urllib.request
+import sys
+import urllib.parse
+
 if _name__ == "__main__":
-   import urllib.request
-   import sys
-   import urllib.parse
    url = sys.argv[1]
    email = sys.argv[2]
   
