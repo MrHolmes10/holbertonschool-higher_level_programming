@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""who am i  """
+"""Fetches a URL and handles HTTP errors."""
 
-import urllib.error
 import urllib.request
+import urllib.error
 import sys
 
-if  __name__ == "__main__":
+if __name__ == "__main__":
     url = sys.argv[1]
 
-    try :
-        with urllib.request.urlopen(url) as urll:
-            ans = urll.read()
-            ans = ans.decode("utf-8")
-            print(ans)
-    except urllib.error.HTTPError as FAIQ:
-        print("Error code: {}".format(FAIQ.code))
+    try:
+        with urllib.request.urlopen(url) as response:
+            body = response.read()
+            print(body.decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        print("Error code: {}".format(e.code))
