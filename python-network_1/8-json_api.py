@@ -15,8 +15,8 @@ if __name__ == "__main__":
        faiqjson = faiq.json()
        
        if faiqjson :
-          print("[{}] {}".format(faiqjson.get("id"), faiqjson.get("name")))
+           print("[{}] {}".format(faiqjson.get("id"), faiqjson.get("name")))
        else:
-          print("No result")
+           print("No result")
    except ValueError:
        print("Not a valid JSON")
