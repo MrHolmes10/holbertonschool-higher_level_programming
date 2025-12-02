@@ -13,5 +13,5 @@ if  __name__ == "__main__":
             ans = urll.read()
             ans = ans.decode("utf-8")
             print(ans)
-    except urllib.error.HTTPError as E:
-        print("Error code: {}".format(E.code))
+    except urllib.error.HTTPError as FAIQ:
+        print("Error code: {}".format(FAIQ.code))
