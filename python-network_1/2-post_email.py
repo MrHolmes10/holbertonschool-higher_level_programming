@@ -9,11 +9,13 @@ if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
 
-   # post
+    # post
     data = urllib.parse.urlencode({"email": email}).encode("utf-8")
-   # post req
+
+    # post req
     with urllib.request.urlopen(url, data) as urll:
          bod = urll.read()
-   # decode
+
+    # decode
     print(bod.decode("utf-8"))
 
