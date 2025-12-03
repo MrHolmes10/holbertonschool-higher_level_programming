@@ -1,8 +1,9 @@
+#!/bin/bash/python3
 import json
 from http.server import HTTPServer , BaseHTTPRequestHandler
 
 class SimpleAPIHandler(BaseHTTPRequestHandler):
-    
+
     def do_get(self):
         if self.path == "/":
             self.send_response(200)
