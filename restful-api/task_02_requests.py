@@ -1,32 +1,35 @@
-#!/usr/bin/python3
-"""who am i  """
-
+#!/bin/bash/python3
 import requests
 import csv
 
 def fetch_and_print_posts():
+    """Fetch posts and print the status code + their titles."""
     url = "https://jsonplaceholder.typicode.com/posts"
     response = requests.get(url)
 
-    print("Status Code: {}").format(response.status_code)
+    # Print status code
+    print(f"Status Code: {response.status_code}")
 
-    if response.status_code == 200 :
+    # If successful, parse JSON
+    if response.status_code == 200:
         data = response.json()
-        for pos in data:
-            print(pos["title"])
+        for post in data:
+            print(post["title"])
 
 
 def fetch_and_save_posts():
-    """ some code"""
+    """Fetch posts and save id, title, body into posts.csv."""
     url = "https://jsonplaceholder.typicode.com/posts"
-    res = requests.get(url)
+    response = requests.get(url)
 
-    if res.status_code == 200:
-        data = res.json()
+    if response.status_code == 200:
+        data = response.json()
 
-        posts_list = [ {
-            "id": post["id"],
-             "title": post["title"],
+        # Prepare list of dictionaries
+        posts_list = [
+            {
+                "id": post["id"],
+                "title": post["title"],
                 "body": post["body"],
             }
             for post in data
@@ -37,4 +40,3 @@ def fetch_and_save_posts():
             writer = csv.DictWriter(file, fieldnames=["id", "title", "body"])
             writer.writeheader()
             writer.writerows(posts_list)
-
