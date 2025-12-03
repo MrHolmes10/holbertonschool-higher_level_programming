@@ -1,21 +1,20 @@
 #!/usr/bin/python3
-""" network email"""
+"""Sends a POST request with an email parameter and displays the response."""
 
 import urllib.request
-import sys
 import urllib.parse
+import sys
 
 if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
 
-    # post
+    # Encode the POST data
     data = urllib.parse.urlencode({"email": email}).encode("utf-8")
 
-    # post req
-    with urllib.request.urlopen(url, data) as urll:
-         bod = urll.read()
+    # Send POST request
+    with urllib.request.urlopen(url, data) as response:
+        body = response.read()
 
-    # decode
-    print(bod.decode("utf-8"))
-
+    # Decode and print response body
+    print(body.decode("utf-8"))
