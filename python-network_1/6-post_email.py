@@ -10,4 +10,4 @@ if __name__ == "__main__":
     
     data = {"email": email}
     fako = requests.post(url, data=data)
-    print(faiq.text)
+    print(fako.text)
