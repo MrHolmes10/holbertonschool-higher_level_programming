@@ -6,7 +6,7 @@ import csv
 
 def fetch_and_print_posts():
     url = "https://jsonplaceholder.typicode.com/posts"
-    response = requests.get()
+    response = requests.get(url)
 
     print("Status Code: {}").format(response.status_code)
 
@@ -14,7 +14,7 @@ def fetch_and_print_posts():
         data = response.json()
         for pos in data:
             print(pos["title"])
- 
+
 
 def fetch_and_save_posts():
     """ some code"""
